@@ -1,0 +1,8 @@
+==========COISAS GERAIS DE JS===============   
+
+JavaScript é uma linguagem mais voltada ao client-side, mas ela tambem funciona no lado do servidor.
+
+------O conceito cliente servidor-----
+Os clientes são aqueles que usam um serviço que é fornecido por um servidor.
+Para que essa relação acontece precisamos de um navegador, o navegador faz o pedido para os servidores e recebe a resposta desse pedido que são as copias dos arquivos requisitados.
+As três peças principais dos sites: Conteúdo(HTML), Design(CSS) e as Interações(JS);
