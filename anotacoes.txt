@@ -64,4 +64,21 @@ Alguns atributos para se usar com strings:
 Alguns atributos para se usar com numeros:
     --n1.toFixed(numero de casas) = esse atributo serve para dizer quantas casas nos queremos após a virgula;
     --.replace = serve pra substituir uma coisa por outra EX: "n1.replace('.', ','); OBS: acho que isso não serve só pra numero;
-    --n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) =  esse comando serve pra mostrar o numero em real
+    --n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) =  esse comando serve pra mostrar o numero em real.
+--------------------------
+
+==================Operadores===============
+
+Os Operadores aritmeticos:
+    -- "+" = soma;
+    -- "-" = subtracacao;
+    -- "*" = multiplicacao;
+    -- "/" = divisao real (numeros com virgula);
+    -- "%" = resto da divisao inteira;
+    -- "**" = potencia;
+--------------------------------
+temos como simplificar as auto-atribuicoes das operações aritmeticas fa seguinte forma, antes do sinal "=" nos colocamos o operador que queremos, por exemplo se nos fizermos "n *= 5" é o mesmo que "n = n*5".
+
+Operadores de incremento:
+    -- "x ++" = pega o valor da variavel e acrescenta + 1 ao valor
+    -- "x --" = pega o valor da variavel e subtrai - 1 ao valor
