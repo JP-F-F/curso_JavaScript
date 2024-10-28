@@ -2,11 +2,16 @@
 
 JavaScript é uma linguagem mais voltada ao client-side, mas ela tambem funciona no lado do servidor.
 
+no JS podemos usar o comando "document.write" para escrever algo na tela, e dentro desse comando é possivel usar tags HTML
+
 ------O conceito cliente servidor-----
 
 O modelo Cliente-Servidor é uma arquitetura de rede amplamente utilizada na computação, onde um programa cliente solicita serviços a um programa servidor. Essa arquitetura é baseada em uma relação de cooperação entre o cliente e o servidor, onde o cliente envia uma requisição ao servidor e aguarda pela resposta. Neste glossário, iremos explorar em detalhes o conceito de Cliente-Servidor, suas características, benefícios e aplicações.
+
 Os clientes são aqueles que usam um serviço que é fornecido por um servidor.
+
 Para que essa relação acontece precisamos de um navegador, o navegador faz o pedido para os servidores e recebe a resposta desse pedido que são as copias dos arquivos requisitados.
+
 As três peças principais dos sites: Conteúdo(HTML), Design(CSS) e as Interações(JS);
 
 ------Diferença de Java pra JS e outras coisinhas--------
@@ -22,10 +27,41 @@ existe frameWork de JS até pra fazer jogos.
 caso precisemos inserir o JS numa página web, a tag "script" deve ser inserida após todas as outras tags junto do final do body
 
 ==============Váriaveis e tipos primitivos===========
+
 O guanabara disse pra sempre levar em consideração o sinal "=" como "recebe" no JS. Ou seja "=" = "recebe".
+
 caso a gente queira que uma Váriavel fique sem valor, nos podemos dar a ela o valor "null", EX: let váriavel = null.
 Os nomes das Váriaveis a gente chama de identificador, e existem algumas regras para os nomes desses identificadores, eles podem começar com os seguintes caracteres "letra", "$", "_", dificilmente a gente vai usar as duas ultimas, mas pode acontecer.
+
 Os Nomes não podem começar com numeros, nem conter espaços, nem ser palavras reservadas como "var".
 o JS não faz Diferença entre numeros inteiros e fracionarios na definição de váriaveis, ambos os tipos são considerados "number".
+
 Usando o comando "typeof" em JS (nesse caso usamos no Node) podemos ver qual o tipo de uma váriavel, EX: typeof var1.
 Tembem podemos usar esse "typeof" para ver que tipo de váriavel seria um valor literal, EX: typeof 2
+As váriaveis de tipo primitivo que o guanabara vai se focar nesse curso são "string", "number" e "boolean";
+
+===================Lidando com os dados=========================
+
+Para concatenar dados em JS usamos o "+", EX: window.alert ("voce " + nome + " é incrivel")
+O comando window.prompt do JS naturalmente retorna strings independentemente de serem digitados numeros nele e etc.
+
+Para converter strings para numeros podemos usar os comandos "Number.parseInt(n)" e "Number.parseFloat(n)", sendo que um vai converter pra um tipo number de numeros inteiros e o outro de numeros reais, nós podemos usar tambem  uma versão "resumida" desses comandos, basta apenas digitarmos "number", dessa forma o JS vai decidir por si só qual tipo numerico se encaixa melhor na váriavel, mas vale lembrar que esse metodo resumido não elimina os outros.
+
+Agora pra converter numeros para strings nos usamos os comandos "String(n)" ou "n.toString()"
+
+---------Formatando Strings------
+
+Nas versões mais atuais do JS temos uma "tecnica" chamada template strings, que nos auxilia em algumas coisa envolvendo strings uma delas sendo a concatenação. Nós utilizamos essa tecnica com essa formatação "´${}´"; EX: `Seu nome é ${nome}`.
+
+Alguns atributos para se usar com strings:
+    --s.length = esse length serve pra mostrar quantos caracteres tem na string;
+    --s.UpperCase() = deixa todos os caracteres da string em letras maiusculas;
+    --s.toLoweCase() =  deixa todos os caracteres da string em letras minusculas;
+-------------------------
+
+--------Formatando Numeros-----------
+
+Alguns atributos para se usar com numeros:
+    --n1.toFixed(numero de casas) = esse atributo serve para dizer quantas casas nos queremos após a virgula;
+    --.replace = serve pra substituir uma coisa por outra EX: "n1.replace('.', ','); OBS: acho que isso não serve só pra numero;
+    --n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) =  esse comando serve pra mostrar o numero em real
