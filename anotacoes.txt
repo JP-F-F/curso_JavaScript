@@ -14,3 +14,18 @@ As três peças principais dos sites: Conteúdo(HTML), Design(CSS) e as Interaç
 O JS foi criado em 1995 tendo como nome inicial mooca/liveScript, com a intenção de criar uma linguagem que desse mais interações as páginas estáticas, e enquanto isso ocorria o Java ganhava grande popularidade na midía, então vendo essa grande popularidade do java os criadores do liveScript decidiram mudar o nome da linguagem pra JavaScript, pra surfar no hype basicamente. Ou seja, java e JavaScript não tem nenhuma real relação. O JS na verdade foi baseado em C.
 
 Tá mas... o que raios é o ECMAscript, essa linguagem é basicamente o JS só que padronizado pela ECMA.
+
+alguns FrameWorks de JavaScript bem populares: Jquery, Angular, React, Vue, Electron, Ionic, Cordova.
+existe frameWork de JS até pra fazer jogos.
+----------------
+
+caso precisemos inserir o JS numa página web, a tag "script" deve ser inserida após todas as outras tags junto do final do body
+
+==============Váriaveis e tipos primitivos===========
+O guanabara disse pra sempre levar em consideração o sinal "=" como "recebe" no JS. Ou seja "=" = "recebe".
+caso a gente queira que uma Váriavel fique sem valor, nos podemos dar a ela o valor "null", EX: let váriavel = null.
+Os nomes das Váriaveis a gente chama de identificador, e existem algumas regras para os nomes desses identificadores, eles podem começar com os seguintes caracteres "letra", "$", "_", dificilmente a gente vai usar as duas ultimas, mas pode acontecer.
+Os Nomes não podem começar com numeros, nem conter espaços, nem ser palavras reservadas como "var".
+o JS não faz Diferença entre numeros inteiros e fracionarios na definição de váriaveis, ambos os tipos são considerados "number".
+Usando o comando "typeof" em JS (nesse caso usamos no Node) podemos ver qual o tipo de uma váriavel, EX: typeof var1.
+Tembem podemos usar esse "typeof" para ver que tipo de váriavel seria um valor literal, EX: typeof 2
