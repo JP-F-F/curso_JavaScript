@@ -80,5 +80,29 @@ Os Operadores aritmeticos:
 temos como simplificar as auto-atribuicoes das operações aritmeticas fa seguinte forma, antes do sinal "=" nos colocamos o operador que queremos, por exemplo se nos fizermos "n *= 5" é o mesmo que "n = n*5".
 
 Operadores de incremento:
-    -- "x ++" = pega o valor da variavel e acrescenta + 1 ao valor
-    -- "x --" = pega o valor da variavel e subtrai - 1 ao valor
+    -- "x ++" = pega o valor da variavel e acrescenta +1 ao valor
+    -- "x --" = pega o valor da variavel e subtrai -1 ao valor
+-------------------------------------------------------------------------------------------
+
+Operadores relacionais
+    -- "<" = menor que;
+    -- ">" = maior que;
+    -- ">=" = maior ou igual a;
+    -- "<=" = menor ou igual a; 
+    -- "==" = igual a;
+    -- "!=" = diferente de;
+--------------------------------------------------------------------------------------------------
+Esses Operadores funcionam com uma "lógica booleana" pois eles checam se algo é verdadeiro ou falso básicamente.
+Vale ressaltar que caso ajam operadores aritmeticos junto de operadores relacionais, se resolvem primeiro os operadores aritmeticos
+
+O operador de igualdade restrita: esse operador testa se os valores são EXATAMENTE iguais, por exemplo o operador de igualdade leria isso "5 == '5'" como iguais pois ele não checa o tipo de váriavel ele apenas compara suas grandezas, já o operador de igualdade restrita veria isso como algo diferente "5 === '5'".
+tambem temos o operador de desigualdade restrita que segue a mesma lógica, ele é escrito assim "!=="
+
+Operadores lógicos
+    -- "!" = negação (checa se algo é diferente do requisitado)
+    -- "&&" = conjunção (checa se duas condições são verdadeiras)
+    -- "||" = disjunção (checa se pelo menos um das condções é verdadeira)
+----------------------------------------------------------------------------------------------
+
+Operador ternario
+ele é divido em três blocos o primeiro que é o "teste" onde é checado se o resultado é verdadeiro ou falso, depois o "?verdadeiro" que diz o que vai acontecer caso o resultado de verdadeiro, e por ultimo ":false" que vai dizer o que ocorre se o valor der falso; EX: media >= 7 ? "aprovado" : "reprovado" 
