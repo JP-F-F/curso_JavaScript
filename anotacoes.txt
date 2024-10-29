@@ -1,108 +1,23 @@
-==========COISAS GERAIS DE JS===============   
+======================Mexendo com o DOM=========================
 
-JavaScript é uma linguagem mais voltada ao client-side, mas ela tambem funciona no lado do servidor.
+O que é o DOM?:
+É um acronimo para Document Object Model, que é um modelo de objetos para documentos, basicamente é um conjunto de objetos dentro do navegador que dão acesso aos componentes internos do site.
+----------------------------------------------------------------------------------------------------
 
-no JS podemos usar o comando "document.write" para escrever algo na tela, e dentro desse comando é possivel usar tags HTML
+A árvore DOM:
+A raiz da arvore é a window, na raiz tudo que está dentro do JS está na raiz, ou seja a janela do nosso navegador é um objeto de nome "WINDOW".
+E dentro da window temos outros objetos 3 deles seriam:
+    -- location: que diz qual é a localizção do site, nele temos coisas como a URL, a pagina atual, a pagina anterio e etc;
+    -- document: É o documento atual, aqui dentro fica o objeto HTML;
+    -- history: Que guarda da onde a gente veio pra onde a gente vai e etc;
+-------
+basicamente dentro da window está tudo que nós usamos para gerenciar nosso site, até mesmo o "head" e o "body" são objetos DOM, e sim as tags tambem são objetos DOM;
+---------------------------------------------------------------------------------------
 
-------O conceito cliente servidor-----
-
-O modelo Cliente-Servidor é uma arquitetura de rede amplamente utilizada na computação, onde um programa cliente solicita serviços a um programa servidor. Essa arquitetura é baseada em uma relação de cooperação entre o cliente e o servidor, onde o cliente envia uma requisição ao servidor e aguarda pela resposta. Neste glossário, iremos explorar em detalhes o conceito de Cliente-Servidor, suas características, benefícios e aplicações.
-
-Os clientes são aqueles que usam um serviço que é fornecido por um servidor.
-
-Para que essa relação acontece precisamos de um navegador, o navegador faz o pedido para os servidores e recebe a resposta desse pedido que são as copias dos arquivos requisitados.
-
-As três peças principais dos sites: Conteúdo(HTML), Design(CSS) e as Interações(JS);
-
-------Diferença de Java pra JS e outras coisinhas--------
-
-O JS foi criado em 1995 tendo como nome inicial mooca/liveScript, com a intenção de criar uma linguagem que desse mais interações as páginas estáticas, e enquanto isso ocorria o Java ganhava grande popularidade na midía, então vendo essa grande popularidade do java os criadores do liveScript decidiram mudar o nome da linguagem pra JavaScript, pra surfar no hype basicamente. Ou seja, java e JavaScript não tem nenhuma real relação. O JS na verdade foi baseado em C.
-
-Tá mas... o que raios é o ECMAscript, essa linguagem é basicamente o JS só que padronizado pela ECMA.
-
-alguns FrameWorks de JavaScript bem populares: Jquery, Angular, React, Vue, Electron, Ionic, Cordova.
-existe frameWork de JS até pra fazer jogos.
-----------------
-
-caso precisemos inserir o JS numa página web, a tag "script" deve ser inserida após todas as outras tags junto do final do body
-
-==============Váriaveis e tipos primitivos===========
-
-O guanabara disse pra sempre levar em consideração o sinal "=" como "recebe" no JS. Ou seja "=" = "recebe".
-
-caso a gente queira que uma Váriavel fique sem valor, nos podemos dar a ela o valor "null", EX: let váriavel = null.
-Os nomes das Váriaveis a gente chama de identificador, e existem algumas regras para os nomes desses identificadores, eles podem começar com os seguintes caracteres "letra", "$", "_", dificilmente a gente vai usar as duas ultimas, mas pode acontecer.
-
-Os Nomes não podem começar com numeros, nem conter espaços, nem ser palavras reservadas como "var".
-o JS não faz Diferença entre numeros inteiros e fracionarios na definição de váriaveis, ambos os tipos são considerados "number".
-
-Usando o comando "typeof" em JS (nesse caso usamos no Node) podemos ver qual o tipo de uma váriavel, EX: typeof var1.
-Tembem podemos usar esse "typeof" para ver que tipo de váriavel seria um valor literal, EX: typeof 2
-As váriaveis de tipo primitivo que o guanabara vai se focar nesse curso são "string", "number" e "boolean";
-
-===================Lidando com os dados=========================
-
-Para concatenar dados em JS usamos o "+", EX: window.alert ("voce " + nome + " é incrivel")
-O comando window.prompt do JS naturalmente retorna strings independentemente de serem digitados numeros nele e etc.
-
-Para converter strings para numeros podemos usar os comandos "Number.parseInt(n)" e "Number.parseFloat(n)", sendo que um vai converter pra um tipo number de numeros inteiros e o outro de numeros reais, nós podemos usar tambem  uma versão "resumida" desses comandos, basta apenas digitarmos "number", dessa forma o JS vai decidir por si só qual tipo numerico se encaixa melhor na váriavel, mas vale lembrar que esse metodo resumido não elimina os outros.
-
-Agora pra converter numeros para strings nos usamos os comandos "String(n)" ou "n.toString()"
-
----------Formatando Strings------
-
-Nas versões mais atuais do JS temos uma "tecnica" chamada template strings, que nos auxilia em algumas coisa envolvendo strings uma delas sendo a concatenação. Nós utilizamos essa tecnica com essa formatação "´${}´"; EX: `Seu nome é ${nome}`.
-
-Alguns atributos para se usar com strings:
-    --s.length = esse length serve pra mostrar quantos caracteres tem na string;
-    --s.UpperCase() = deixa todos os caracteres da string em letras maiusculas;
-    --s.toLoweCase() =  deixa todos os caracteres da string em letras minusculas;
--------------------------
-
---------Formatando Numeros-----------
-
-Alguns atributos para se usar com numeros:
-    --n1.toFixed(numero de casas) = esse atributo serve para dizer quantas casas nos queremos após a virgula;
-    --.replace = serve pra substituir uma coisa por outra EX: "n1.replace('.', ','); OBS: acho que isso não serve só pra numero;
-    --n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) =  esse comando serve pra mostrar o numero em real.
---------------------------
-
-==================Operadores===============
-
-Os Operadores aritmeticos:
-    -- "+" = soma;
-    -- "-" = subtracacao;
-    -- "*" = multiplicacao;
-    -- "/" = divisao real (numeros com virgula);
-    -- "%" = resto da divisao inteira;
-    -- "**" = potencia;
---------------------------------
-temos como simplificar as auto-atribuicoes das operações aritmeticas fa seguinte forma, antes do sinal "=" nos colocamos o operador que queremos, por exemplo se nos fizermos "n *= 5" é o mesmo que "n = n*5".
-
-Operadores de incremento:
-    -- "x ++" = pega o valor da variavel e acrescenta +1 ao valor
-    -- "x --" = pega o valor da variavel e subtrai -1 ao valor
--------------------------------------------------------------------------------------------
-
-Operadores relacionais
-    -- "<" = menor que;
-    -- ">" = maior que;
-    -- ">=" = maior ou igual a;
-    -- "<=" = menor ou igual a; 
-    -- "==" = igual a;
-    -- "!=" = diferente de;
---------------------------------------------------------------------------------------------------
-Esses Operadores funcionam com uma "lógica booleana" pois eles checam se algo é verdadeiro ou falso básicamente.
-Vale ressaltar que caso ajam operadores aritmeticos junto de operadores relacionais, se resolvem primeiro os operadores aritmeticos
-
-O operador de igualdade restrita: esse operador testa se os valores são EXATAMENTE iguais, por exemplo o operador de igualdade leria isso "5 == '5'" como iguais pois ele não checa o tipo de váriavel ele apenas compara suas grandezas, já o operador de igualdade restrita veria isso como algo diferente "5 === '5'".
-tambem temos o operador de desigualdade restrita que segue a mesma lógica, ele é escrito assim "!=="
-
-Operadores lógicos
-    -- "!" = negação (checa se algo é diferente do requisitado)
-    -- "&&" = conjunção (checa se duas condições são verdadeiras)
-    -- "||" = disjunção (checa se pelo menos um das condções é verdadeira)
-----------------------------------------------------------------------------------------------
-
-Operador ternario
-ele é divido em três blocos o primeiro que é o "teste" onde é checado se o resultado é verdadeiro ou falso, depois o "?verdadeiro" que diz o que vai acontecer caso o resultado de verdadeiro, e por ultimo ":false" que vai dizer o que ocorre se o valor der falso; EX: media >= 7 ? "aprovado" : "reprovado" 
+Os principais métodos de acesso no DOM:
+    -- por marca: A tag, para selecionarmos um elemento assim usamos o comando "getElementsByTagName('')" vale ressaltar que assim podemos acabar selecionando mais de um elemento caso aja por exemplo e <p> numa pagina, e caso nós desejemos selecionar um elemento apenas desses 3, nós colocamos entre conchetes o numero do elemento (na ordem que ele aparece na página) EX:[2];
+    -- por ID: o Id da tag/elemento, nesse caso usamos o getElementById();
+    -- por Nome: o name do elemento, getElementsByName(), a regrinha dos conchetes provavelmente se aplica aqui.
+    -- por Classe: a classe da tag/elemento, getElementsByClassName()
+    -- por Seletor: pelo seletor CSS(?), querySelector() ou querySelectorAll(), EX: document.querySelector('div#msg'), basicamente selecionamos as coisas como se tivessemos selecionando no CSS.
+-----------------------------------
