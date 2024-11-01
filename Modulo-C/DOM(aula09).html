@@ -7,28 +7,81 @@
     <title>Mexendo com o DOM</title>
     <style>
         *{
-            font-size: 1.5em;
+            font-size: 1.3em;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
         body{
             background-color: lightskyblue;
         }
+
+        div#area{
+            background-color: lightgreen;
+            color: whitesmoke;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
+    <!-- EXEMPLO DA AULA 09 -->
     <h1>Primeiros passos do DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
+    <!-- ------------------------------------------------------------- -->
+    
+    <!-- EXEMPLOS DA AULA 10 -->
+    <div id="area" onmouseover="entrar()" >
+        Interaja...
+    </div>
+
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">resultado</div>
 
     <script>
+        //EXEMPLOS DA AULA 09
         let corpo = window.document.body
         let p1 = document.getElementsByTagName('p')[1]
         let d = document.querySelector('div#msg')
         document.write('o que tá escrito no primeiro paragrafo: ' + p1.innerText)
         p1.style.textAlign = 'center'
         document.write(p1.innerHTML)
+        //----------------------------------------------------------------------------------
+
+        //EXEMPLOS DA AULA 10 
+        var a = document.getElementById('area')
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseout', saiu)
+
+        function clicar() {
+            a.innerText = 'clicou'
+            a.style.backgroundColor = 'red'
+        }
+
+        function entrar(){
+            a.innerText = 'entrou'
+        }
+
+        function saiu(){
+            a.innerText = 'saiu'
+        }
+
+        function somar(){
+            var tn1 =  document.getElementById('txtn1')
+            var tn2 =  document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
+        }
     </script>
 </body>
 </html>

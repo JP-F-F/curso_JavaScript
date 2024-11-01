@@ -20,4 +20,15 @@ Os principais métodos de acesso no DOM:
     -- por Nome: o name do elemento, getElementsByName(), a regrinha dos conchetes provavelmente se aplica aqui.
     -- por Classe: a classe da tag/elemento, getElementsByClassName()
     -- por Seletor: pelo seletor CSS(?), querySelector() ou querySelectorAll(), EX: document.querySelector('div#msg'), basicamente selecionamos as coisas como se tivessemos selecionando no CSS.
------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
+--------------OS EVENTOS DOM---------------------------------------------------------------------
+
+O que são eventos DOM:
+É tudo aquilo que pode acontecer com o elemento. Por exemplo, eventos de mouse, como pasar o mouse em cima de uma div,e isso vai fazer acontecer algo.
+É importante lembrar que para usar os eventos é necessário saber sobre funções, que são básicamente blocos de código que são executados quando o evento ocorrer.
+Os eventos podem ser configurados tanto na parte HTML tanto na parte do script, isso fica a sua escolha.
+    º Disparando eventos no HTML: para configurarmos eventos na parte HTML nós vamos no elemento que queremos que ocorra o evento, e dentro da tag colocamos o evento e sua respectiva função EX: "<div ONCLICK="clicar()> algo na div </div>".
+    º Disparando eventos no JS: Para isso nós iremos usar os listener do JS, para isso pegamos uma váriavel que envolve o nosso elemento, adicionamos a propriedade ".addEventListener(aqui dentro vai os eventos e suas determinadas funções que serão escutados)
+    EX: a.addEventListener('onclick', clicar)
+------------------------------------------------
