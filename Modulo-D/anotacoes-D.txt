@@ -1,6 +1,6 @@
 =========================CONDICOES=================================
 
-Códigos sequenciais que de acordo com o GG são importantes para se entender essa parte, são básicamentes códigos que vão acontecer em uma determina sequencia, que é inalteravel.
+Códigos sequenciais que de acordo com o GG são importantes para se entender essa parte, são básicamentes códigos que vão acontecer em uma determina sequencia, que é inalteravel, geralmente na ordem dos comandos dispostos nas das linhas.
 E é nessas horas que entram as condições, elas servem para que possamos quebrar essas sequencia "inalteravel".
 
 ----------Alguns tipos de condições----------------

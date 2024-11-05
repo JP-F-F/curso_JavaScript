@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usando as condições</title>
+</head>
+<body>
+    <h1>Sitema de pontos</h1>
+    <label for="textvel">Velocidade Do Carro:</label>
+    <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+
+        function calcular(){
+            var txtv = document.getElementById('txtvel')
+            var vel = Number(txtv.value)
+            var res = document.querySelector('div#res')
+            res.innerHTML = `<p>Sua velocidade atual é <strong>${vel}</strong> Km/h</p>`
+            if(vel > 60){
+                res.innerHTML += '<p>Continue assim, para que os alvos <strong>não escapem</strong></p>'
+            }else{
+                res.innerHTML += 'Continue assim e nem uma velinha você acerta'
+            }
+            res.innerHTML += `<p>lembre-se mantenha sempre os olhos na estrada</p>`
+        }
+     
+    </script>
+</body>
+</html>
