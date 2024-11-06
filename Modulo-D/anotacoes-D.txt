@@ -6,4 +6,13 @@ E é nessas horas que entram as condições, elas servem para que possamos quebr
 ----------Alguns tipos de condições----------------
 
 "Condições Simples" que básicamente teram apenas um bloco de código, por exemplo o "IF" que só tem o bloco de verdadeiro.
-"Condições Complexas(?)" são básicamente condições que tem mais de um bloco de código um para caso a condição seja verdadeira e um para caso a condição seja falsa, por exemplo o "IF" junto ao "ELSE".
+
+"Condições Compostas" são básicamente condições que tem mais de um bloco de código um para caso a condição seja verdadeira e um para caso a condição seja falsa, por exemplo o "IF" junto ao "ELSE".
+
+"Condições Anhinhadas" nesse tipo de condição a gente básicamente pega uma condição composta e coloca outras condições dentro
+
+Um truque muito bacana pra pegar a hora do PC que o GG mostrou:
+var nomeVar = newdate()
+var hora = nomeVar getHours()
+
+"Condições Múltiplas" Ela tem muitas outras possibilidades de valores, muito util para valores fixos, usamos assim o "switch (expressão){ case valor 1: oq acontece break; case valor 2: acontece isso break; default: oq acontece se nada mais funcionar;}"
