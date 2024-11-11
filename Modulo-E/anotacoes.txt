@@ -1,0 +1,13 @@
+# Repetições/Laços de repetição
+
+## Falando um pouco de estruturas de controle:
+
+**sequencias**: que básicamente são códigos que acontecem numa sequencia específica.
+
+**condições**: básicamente são testes para saber o que se fazer em casos que não se pode fazer uma sequencia especifica, pois há mais de um possivel caminho ou resultado.
+
+**repetições**: assim como nas condições ele tambem testa o resultado, caso o resultado seja true ele executar o bloco de código e depois vai voltar para a condição, até que ela seja false, e quando isso ocorrer ela vai sair do bloco sem realiza-lo, assim terminando o loop 
+
+O _WHILE_ é considerado uma **estrutura de repetição com teste logico no inicio**, pois ele realiza primeiro um teste e depois o bloco.
+
+Podemos também fazer o _contrario_ usando o **do** primeiro e depois o **while**
