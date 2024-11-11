@@ -16,3 +16,9 @@ var nomeVar = newdate()
 var hora = nomeVar getHours()
 
 "Condições Múltiplas" Ela tem muitas outras possibilidades de valores, muito util para valores fixos, usamos assim o "switch (expressão){ case valor 1: oq acontece break; case valor 2: acontece isso break; default: oq acontece se nada mais funcionar;}"
+
+-----------alguns comandos marotos----------
+
+.setAtribute = esse comando básicamente serve pra mudar ou dar um valor a um atributo de uma tag html EX: img.setAtribute('src', 'caminho da imagem'), como é possível observar o atributo em si e seu respectivo novo valor devem ser dispostos em aspas simples de preferencia
+
+.appendChild = esse comando faz com que um elemento HTML seja criado básicamente, EX: tag.appendchild(variavel que leva o elemento as ser criado)
