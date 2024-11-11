@@ -12,3 +12,9 @@ do{
     console.log('uepa')
     c++
 }while(c <= 6)
+
+// usando o FOR
+
+for(c = 0; c <= 6; c++){
+    console.log(`Tentativa ${c}`)
+}
