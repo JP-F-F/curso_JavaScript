@@ -39,3 +39,12 @@ div{
     padding: 8px;   
 }
 
+div > p{
+    padding: 5px;
+    margin: 3px;
+}
+
+div#dados{
+    padding: 10px;
+    margin: 10px;
+}

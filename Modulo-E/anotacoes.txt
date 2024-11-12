@@ -28,3 +28,6 @@ A variavel que sera utilizada no teste lógico _EX: c = 0_
 O teste lógico que falidará se o bloco de código deve ser realizado _EX: c<=23_
 #### Incremento:
 O incremento da váriavel usada no começo do teste _EX: c++_
+
+##### curiosidade
+Para usarmos _emojis_ no JS a gente pega o **codigo** do emoji e escreve ele assim _\u{1f603}_
