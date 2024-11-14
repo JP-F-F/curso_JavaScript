@@ -31,3 +31,6 @@ O incremento da váriavel usada no começo do teste _EX: c++_
 
 ##### curiosidade
 Para usarmos _emojis_ no JS a gente pega o **codigo** do emoji e escreve ele assim _\u{1f603}_
+
+##### importante
+Podemos criar elementos html com o comando document.createElement('tag a ser criada') geralmente se atribui isso á uma variavel
