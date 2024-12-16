@@ -15,3 +15,16 @@ Outro comando útil que serve para _Buscar valores dentro de um vetor_ é o **.i
 
 O ECMAscript tem uma versão do _for_ para váriveis compostas, que serve para simplificar muitos processos.
 _ele funciona da seguinte maneira:_ for(let indice in num){ código a se realizar}
+
+# Funções
+
+As _Funções_ são ações executadas assim que são chamadas ou em decorrência de algum evento. 
+Elas também podem receber parâmetros e retornar resultados.
+**É possível fazer uma váriavel receber uma função como "valor"**
+
+### O que toda função pode ter?
+
+**Chamada**: Essa seria a ordem o "Eventou" que ativa a função.
+**Parâmetro**: Nem toda função tem mas muitas tem esses valores de entrada.
+**Ação**: É o que a função deverá realizar.
+**Retorno**: É o que deve se retornar na função.

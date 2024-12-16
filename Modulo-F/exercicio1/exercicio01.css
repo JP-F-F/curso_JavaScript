@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: rgb(70, 142, 216);
+    font: normal 1em;
+}
+
+header{
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px;
+}
+
+section{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow:  3px 3px 5px rgba(80, 0, 0, 0.678);
+}
+
+footer{
+    color: whitesmoke;
+    text-align: center;
+    font-style: italic;
+    margin: 10px;
+}
+
+select#flista{
+    width: 80%;
+    overflow-y: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em ;
+}
+
+.botao{
+    background-color: black;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 1.1em;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.botao:hover{
+    background-color: whitesmoke;
+    font-size: 1.3em;
+    color: black;
+    border: 2px solid black;
+    transition: 500ms;
+}
+
+div{
+    text-align: center;
+    padding: 8px;   
+}
+
+div > p{
+    padding: 5px;
+    margin: 3px;
+}
+
+div#dados{
+    padding: 10px;
+    margin: 10px;
+}
