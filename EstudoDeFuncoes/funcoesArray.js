@@ -129,4 +129,4 @@ const pessoas2 = [
 
 const filteredUsers = pessoas2.filter( p => p.name.includes('au'))
 
-console.log(filteredUsers)
+//console.log(filteredUsers)
